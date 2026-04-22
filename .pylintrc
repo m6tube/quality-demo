@@ -1,0 +1,38 @@
+[MASTER]
+# Игнорировать __pycache__ и виртуальные окружения
+ignore=.git,__pycache__,venv,.venv
+
+[FORMAT]
+# Максимальная длина строки
+max-line-length=100
+
+[BASIC]
+# Минимальная длина имени переменной
+min-name-length=2
+
+[MESSAGES CONTROL]
+# Отключить некоторые предупреждения (опционально)
+disable=
+    missing-module-docstring,
+    missing-function-docstring,
+    too-few-public-methods
+
+[REPORTS]
+# Формат отчёта
+output-format=text
+
+[SIMILARITIES]
+# Порог для обнаружения дублирования кода
+min-similarity-lines=10
+
+[TYPECHECK]
+# Игнорировать ошибки импорта для динамических зависимостей
+ignored-modules=numpy,pandas
+
+[DESIGN]
+# Максимальное количество локальных переменных в функции
+max-locals=20
+
+# Порог прохождения (качество кода)
+[REPORTS]
+fail-under=7.0
